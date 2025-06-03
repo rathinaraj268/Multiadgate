@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Step 3</title>
+</head>
+<body>
+  <h1>Step 3: Another 10 seconds wait</h1>
+  <p>More ads here</p>
+  <button id="next" disabled>Go to Step 4</button>
+
+  <script>
+    setTimeout(() => {
+      document.getElementById('next').disabled = false;
+    }, 10000);
+
+    document.getElementById('next').onclick = () => {
+      window.location.href = 'step4.html';
+    };
+  </script>
+</body>
+</html>
